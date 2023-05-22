@@ -4,4 +4,5 @@ export interface IColaborador {
   imagem: string;
   // corDeFundo: string;
   time?: string;
+  date: string;
 }

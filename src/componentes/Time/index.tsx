@@ -24,6 +24,7 @@ const Time = (props: ITimeProps) => {
             nome={colaborador.nome}
             cargo={colaborador.cargo}
             imagem={colaborador.imagem}
+            date={colaborador.date}
           />
         ))}
       </div>

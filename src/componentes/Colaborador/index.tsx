@@ -5,6 +5,7 @@ interface IColaboradorProps {
   imagem: string;
   cargo: string;
   corDeFundo: string;
+  date: string;
 }
 
 const Colaborador = ({
@@ -12,6 +13,7 @@ const Colaborador = ({
   imagem,
   cargo,
   corDeFundo,
+  date,
 }: IColaboradorProps) => {
   return (
     <div className="colaborador">
@@ -21,6 +23,7 @@ const Colaborador = ({
       <div className="rodape">
         <h4>{nome}</h4>
         <h5>{cargo}</h5>
+        <h5>{new Date(date).toDateString()}</h5>
       </div>
     </div>
   );
